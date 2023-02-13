@@ -1,8 +1,10 @@
 #include <iostream>
+#include <ctime>
 using namespace std;
 
 void guessingGame(){
     int guesses = 0;
+    srand(time(0));
     int number = rand() % 100 + 1;
     int guess;
 
